@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Register</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<!----webfonts---->
+<link href='http://fonts.googleapis.com/css?family=Exo+2:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+		  <div class="header_top">
+			<ul class="phone">
+				<li class="phone_left"><i class="mobile"> </i><span>1-200-346-2986</span></li>
+				<li class="phone_right">全民美食共享平台，足不出户尝遍万家美味</li>
+				<div class="clearfix"></div>
+			</ul>
+			<ul class="social">
+				 <li><a href=""> <i class="tw"> </i> </a></li>
+				 <li><a href=""><i class="fb"> </i> </a></li>
+				 <li><a href=""><i class="rss"> </i> </a></li>
+				 <li><a href=""><i class="msg"> </i> </a></li>
+				 <div class="clearfix"> </div>
+			</ul>
+			<ul class="account">
+				<li><a href="account.html">我的账户</a></li>
+			</ul>
+			<ul class="shopping_cart">
+			   <a href="#"><li class="shop_left"><i class="cart"> </i><span>购物车</span></li></a>
+			   <a href="#"><li class="shop_right"><span>$0.00</span></li></a>
+			   <div class="clearfix"> </div>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<div class="header_bottom">
+		  <div class="header_nav">
+      		<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt=""/><br></a>
+			 </div>
+			 <nav class="navbar navbar-default menu" role="navigation"><h3 class="nav_right"><a href="index.html"><img src="images/logo.png" class="img-responsive" alt=""/></a></h3>
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			    </div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav menu1">
+			      	<li class="active"><a href="index.html">特色招牌</a></li>
+			        <li><a href="fruits.html">蔬菜水果</a></li>
+			        <li><a href="products.html">美食正餐</a></li>
+			        <li><a href="store.html">店铺定位</a></li>
+			        <li><a href="club.html">吃货小组</a></li>
+			        <li><a href="contact.html">投诉抱怨</a></li>
+		          </ul>
+		          <ul class="login">
+		          	<a href="account.html"><li class="login_top"><i class="sign"> </i><span>登录再下单</span></li></a>
+		            <a href="register.html"><li class="login_bottom"><i class="register"> </i><span>注册一个呗</span></li></a>
+		          </ul>
+			      <div class="clearfix"></div>
+			      </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+            <div class="clearfix"></div>
+           </div>
+            <div class="search">
+			  <input type="text" class="text" value="你想吃啥？" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Product Details';}">
+			  <input type="submit" value="点我搜索">
+			</div>
+		 </div>  
+		</div>
+	</div>
+    <div class="main">
+		<div class="container">
+		  <div class="Product_top">
+		  	  <form action="register" method="post"> 
+				 <div class="register-top-grid">
+					<h3>个人信息</h3>
+					 <div>
+						<span>用户名<label>*</label></span>
+						<input type="text" name="username"> 
+					 </div>
+					 <!-- <div>
+						<span>名字<label>*</label></span>
+						<input type="text"> 
+					 </div> -->
+					 <div>
+						 <span>电话<label>*</label></span>
+						 <input type="text" name="phone"> 
+					 </div>
+					 <div class="clearfix"> </div>
+					   <a class="news-letter" href="#">
+						 <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>订阅美食画册</label>
+					   </a>
+					</div>
+					<div class="clearfix"> </div>
+						<div class="register-bottom-grid">
+							<h3>登录信息</h3>
+							 <div>
+								<span>输入密码<label>*</label></span>
+								<input type="text" name="password">
+							 </div>
+							 <div>
+								<span>确认<label>*</label></span>
+								<input type="text" name="password2">
+							 </div>
+						  </div>
+				</form>
+				  <div class="clearfix"> </div>
+					<div class="register-but">
+					   <form>
+						 <input type="submit" value="提交">
+						 <div class="clearfix"> </div>
+						</form>
+					</div>
+			</div>
+	  </div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="footer-grid footer-grid1">
+			  <h3 class="m_2">了解我们</h3>
+			  <ul class="list1">
+			  	<li><a href="#">主页</a></li>
+			    <li><a href="#">介绍</a></li>
+			    <li><a href="#">微博</a></li>
+			    <li><a href="#">新闻</a></li>
+			    <li><a href="#">注册</a></li>
+			    <li><a href="#">加入</a></li>
+			  </ul>
+		   </div>
+		   <div class="footer-grid footer-grid2">
+			  <h3 class="m_2">吧唧吧唧</h3>
+			  <ul class="list1">
+			    <li><a href="#">国内首家C2C美食平台</a></li>
+			    <li><a href="#">呷一口家的熟悉味道</a></li>
+			    <li><a href="#">结识上千万吃货好友</a></li>
+			    <li><a href="#">和邻居老王共享美食</a></li>
+			  </ul>
+		   </div>
+		   <div class="footer-grid footer-grid3">
+			  <h3 class="m_2">用户信息</h3>
+			  <ul class="list1">
+			  	<li><a href="#">我的账户</a></li>
+			    <li><a href="#">我的积分</a></li>
+			    <li><a href="#">用户协议</a></li>
+			    <li><a href="#">美食向导</a></li>
+			    <li><a href="#">FAQ</a></li>
+			  </ul>
+		   </div>
+		   <div class="footer-grid footer-grid4">
+			   <h3 class="m_2">交个朋友</h3>
+			   <ul class="footer_social">
+				 <li><a href=""><i class="tw"> </i> </a></li>
+				 <li><a href=""><i class="fb"> </i> </a></li>
+				 <li><a href=""><i class="rss"> </i> </a></li>
+				 <li><a href=""><i class="msg"> </i> </a></li>
+				 <div class="clearfix"> </div>
+			   </ul>
+			   <h3 class="m_3">美食订阅</h3>
+			   <p class="m_4">定期发送最新最火最馋人的美食画册</p>
+			   <div class="footer_search">
+			    <input type="text" class="text" value="输入邮箱" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Email';}">
+			    <input type="submit" value="点我搜索">
+			   </div>
+		   </div>
+		   <div class="footer-grid footer-grid_last">
+	          <ul class="secure">
+			  	<li class="secure_img"><img src="images/secure.png" alt=""/></li> 
+			  	<li class="secure_desc">加入食品安全100%计划</li>
+			  	<div class="clearfix"> </div>
+			  </ul>
+			  <ul class="secure">
+			  	<li class="secure_img"><img src="images/order.png" alt=""/></li> 
+			  	<li class="secure_desc">成为美食到家守护者</li>
+			  	<div class="clearfix"> </div>
+			 </ul>
+		   </div>
+		   <div class="clearfix"> </div>
+		   <div class="copy">
+		    <p>Copyright &copy; 2014.Company name All rights reserved.</p>
+		</div>
+	   </div>
+	</div>
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
+
+

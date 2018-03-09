@@ -50,7 +50,7 @@ public class UserController {
 
 	@RequestMapping("/login")
 	@ResponseBody
-	public SysResult doLogin(@RequestParam("u") String username, @RequestParam("p") String password) {
+	public SysResult doLogin(@RequestParam("username") String username, @RequestParam("password") String password) {
 
 		try {
 

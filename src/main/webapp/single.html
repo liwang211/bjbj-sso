@@ -1,0 +1,396 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Single</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<!----webfonts---->
+<link href='http://fonts.googleapis.com/css?family=Exo+2:100,200,300,400,500,600,700,800,900' rel='stylesheet' type='text/css'>
+ <!----details-product-slider--->
+				<!-- Include the Etalage files -->
+					<link rel="stylesheet" href="css/etalage.css">
+					<script src="js/jquery.etalage.min.js"></script>
+				<!-- Include the Etalage files -->
+				<script>
+						jQuery(document).ready(function($){
+			
+							$('#etalage').etalage({
+								thumb_image_width: 300,
+								thumb_image_height: 400,
+								
+								show_hint: true,
+								click_callback: function(image_anchor, instance_id){
+									alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+								}
+							});
+							// This is for the dropdown list example:
+							$('.dropdownlist').change(function(){
+								etalage_show( $(this).find('option:selected').attr('class') );
+							});
+
+					});
+				</script>
+				<!----//details-product-slider--->	
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+		  <div class="header_top">
+			<ul class="phone">
+				<li class="phone_left"><i class="mobile"> </i><span>400 8787887</span></li>
+				<li class="phone_right">全民美食共享平台，足不出户尝遍万家美味</li>
+				<div class="clearfix"></div>
+			</ul>
+			<ul class="social">
+				 <li><a href=""> <i class="tw"> </i> </a></li>
+				 <li><a href=""><i class="fb"> </i> </a></li>
+				 <li><a href=""><i class="rss"> </i> </a></li>
+				 <li><a href=""><i class="msg"> </i> </a></li>
+				 <div class="clearfix"> </div>
+			</ul>
+			<ul class="account">
+				<li><a href="account.html">我的账户</a></li>
+			</ul>
+			<ul class="shopping_cart">
+			   <a href="#"><li class="shop_left"><i class="cart"> </i><span>购物车</span></li></a>
+			   <a href="#"><li class="shop_right"><span>$0.00</span></li></a>
+			   <div class="clearfix"> </div>
+			</ul>
+			<div class="clearfix"></div>
+		</div>
+		<div class="header_bottom">
+		  <div class="header_nav">
+      		<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt=""/><br></a>
+			 </div>
+			 <nav class="navbar navbar-default menu" role="navigation"><h3 class="nav_right"><a href="index.html"><img src="images/logo.png" class="img-responsive" alt=""/></a></h3>
+			  <div class="container-fluid">
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			    </div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav menu1">
+			      	<li class="active"><a href="index.html">特色招牌</a></li>
+			        <li><a href="fruits.html">蔬菜水果</a></li>
+			        <li><a href="products.html">美食正餐</a></li>
+			        <li><a href="store.html">店铺定位</a></li>
+			        <li><a href="club.html">吃货小组</a></li>
+			        <li><a href="contact.html">投诉抱怨</a></li>
+		          </ul>
+		          <ul class="login">
+		          	<a href="account.html"><li class="login_top"><i class="sign"> </i><span>登录再下单</span></li></a>
+		            <a href="register.html"><li class="login_bottom"><i class="register"> </i><span>注册一个呗</span></li></a>
+		          </ul>
+			      <div class="clearfix"></div>
+			      </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+            <div class="clearfix"></div>
+           </div>
+            <div class="search">
+			  <input type="text" class="text" value="你想吃啥？" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = ' Product Details';}">
+			  <input type="submit" value="点我搜索">
+			</div>
+		 </div>  
+		</div>
+	</div>
+    <div class="main">
+		<div class="container">
+		  <div class="single">
+		   <div class="row content">
+		   	<div class="col-md-3">
+		   	   <div class="category_box">
+		   	  	<h3 class="cate_head">尝遍万家美食</h3>
+		   	     <ul class="category">
+			   	  	<li><a href="#">快餐便当</a></li>
+			   	  	<li><a href="#">特色菜系</a></li>
+			   	  	<li><a href="#">异国料理</a></li>
+			   	  	<li><a href="#">小吃宵夜</a></li>
+			   	  	<li><a href="#">甜品饮品</a></li>
+			   	  	<li><a href="#">果蔬生鲜</a></li>
+			   	  	<li><a href="#">汉堡披萨</a></li>
+			   	  	<li><a href="#">面食粥点</a></li>
+			   	  	<li><a href="#">小吃炸串</a></li>
+			   	  	<li><a href="#">香锅砂锅</a></li>
+			   	  	<li><a href="#">米粉面馆</a></li>
+			   	  	<li><a href="#">火锅烤鱼</a></li>
+			   	  	<li><a href="#">日韩料理</a></li>
+			   	  	<li><a href="#">面包蛋糕</a></li>
+			   	  	<li><a href="#">麻辣烫</a></li>
+		   	     </ul>
+		   	   </div>
+		   	   <ul class="product_reviews">
+		   	   	<h3><i class="arrow"> </i><span>吃货点评</span></h3>
+		   	   	<li>
+		   	   		<ul class="review1">
+		   	   			<li class="review1_img"><img src="images/pic1.jpg" class="img-responsive" alt=""/></li>
+		   	   			<li class="review1_desc"><h3><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a></h3><p>Wed, June 2014</p></li>
+		   	   			<div class="clearfix"> </div>
+		   	   		</ul>
+		   	   	</li>
+		   	   	<li>
+		   	   		<ul class="review1">
+		   	   			<li class="review1_img"><img src="images/pic2.jpg" class="img-responsive" alt=""/></li>
+		   	   			<li class="review1_desc"><h3><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a></h3><p>Wed, June 2014</p></li>
+		   	   			<div class="clearfix"> </div>
+		   	   		</ul>
+		   	   	</li>
+		   	   	<li>
+		   	   		<ul class="review1">
+		   	   			<li class="review1_img"><img src="images/pic3.jpg" class="img-responsive" alt=""/></li>
+		   	   			<li class="review1_desc"><h3><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a></h3><p>Wed, June 2014</p></li>
+		   	   			<div class="clearfix"> </div>
+		   	   		</ul>
+		   	   	</li>
+		   	    <div class="but">
+			       <a href="#">更多吃货点评<i class="but_arrow"> </i></a>
+			    </div>
+		   	   </ul>
+		   	   
+		   	   <ul class="product_reviews">
+		   	   	 <h3><i class="arrow"> </i><span>支付方式</span></h3>
+		   	   	 <img src="images/payment.png" class="img-responsive" alt=""/>
+		   	   </ul>
+		   	</div>
+		   	<div class="col-md-9">
+		   	   <div class="single_image">
+					     <ul id="etalage">
+							<li>
+								<a href="optionallink.html">
+									<img class="etalage_thumb_image" src="images/s1.jpg" class="img-responsive" alt=""/>
+									<img class="etalage_source_image"  src="images/s1.jpg" class="img-responsive" alt=""/>
+								</a>
+							</li>
+							<li>
+								<img class="etalage_thumb_image"  src="images/s2.jpg" class="img-responsive" alt=""/>
+								<img class="etalage_source_image"  src="images/s2.jpg" class="img-responsive" alt=""/>
+							</li>
+							<li>
+								<img class="etalage_thumb_image"  src="images/s3.jpg" class="img-responsive" alt=""/>
+								<img class="etalage_source_image"  src="images/s3.jpg" class="img-responsive" alt=""/>
+							</li>
+							<li>
+								<img class="etalage_thumb_image"  src="images/s1.jpg" class="img-responsive" alt=""/>
+								<img class="etalage_source_image"  src="images/s1.jpg" class="img-responsive" alt=""/>
+							</li>
+							<li>
+								<img class="etalage_thumb_image"  src="images/s2.jpg" class="img-responsive" alt=""/>
+								<img class="etalage_source_image"  src="images/s2.jpg" class="img-responsive" alt=""/>
+							</li>
+							<li>
+								<img class="etalage_thumb_image"  src="images/s3.jpg" class="img-responsive" alt=""/>
+								<img class="etalage_source_image"  src="images/s3.jpg" class="img-responsive" alt=""/>
+							</li>
+							<li>
+								<img class="etalage_thumb_image"  src="images/s1.jpg" class="img-responsive" alt=""/>
+								<img class="etalage_source_image"  src="images/s1.jpg" class="img-responsive" alt=""/>
+							</li>
+						</ul>
+					    </div>
+					    <div class="single_right">
+				        	<h3>蓝蛙汉堡</h3>
+				        	<p class="m_5">餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍餐品介绍</p>
+				        	<div class="price_single">
+							  <span class="reducedfrom">$66.00</span>
+							  <span class="actual1">$12.00</span><a href="#">秒杀价</a>
+							</div>
+				        	
+							<div class="btn_form">
+							   <form>
+								 <input type="submit" value="立即抢购" title="">
+							  </form>
+							</div>
+							<ul class="add-to-links">
+    			              <li><img src="images/wish.png" alt=""><a href="#">收藏宝贝</a></li>
+    			            </ul>
+							<div class="col-xs-12  col-sm-6  col-md-4">
+				              <div class="banners--small  banners--small--social">
+				                <a href="#" class="social"><i class="zocial-facebook"> </i>
+				                <span class="banners--small--text"> 分享至<br>微信</span>
+				                <div class="clearfix"> </div>
+				                </a>
+				              </div>
+            				</div>
+                            <div class="col-xs-12  col-sm-6  col-md-4">
+				              <div class="banners--small  banners--small--social">
+				                <a href="#" class="social"><i class="zocial-twitter"> </i>
+				                <span class="banners--small--text"> 分享至<br>微博</span>
+				                <div class="clearfix"> </div>
+				                </a>
+				              </div>
+            				</div>
+                            <div class="col-xs-12  col-sm-6  col-md-4">
+				              <div class="banners--small  banners--small--social">
+				                <a href="#" class="social"><i class="zocial-pin"> </i>
+				                <span class="banners--small--text"> 分享至<br>豆瓣</span>
+				                <div class="clearfix"> </div>
+				                </a>
+				              </div>
+            			   </div>
+           </div>
+		   <div class="clearfix"> </div>
+		   <!----product-rewies---->
+			<div class="product-reviwes">
+				<!--vertical Tabs-script-->
+				<!---responsive-tabs---->
+					<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+					<script type="text/javascript">
+						$(document).ready(function () {
+							 $('#horizontalTab').easyResponsiveTabs({
+									type: 'default', //Types: default, vertical, accordion           
+									width: 'auto', //auto or any width like 600px
+									fit: true,   // 100% fit in a container
+									closed: 'accordion', // Start closed if in accordion view
+									activate: function(event) { // Callback function if tab is switched
+									var $tab = $(this);
+									var $info = $('#tabInfo');
+									var $name = $('span', $info);
+										$name.text($tab.text());
+										$info.show();
+									}
+								});
+													
+							 $('#verticalTab').easyResponsiveTabs({
+									type: 'vertical',
+									width: 'auto',
+									fit: true
+								 });
+						 });
+					</script>
+				<!---//responsive-tabs---->
+				<!--//vertical Tabs-script-->
+				<!--vertical Tabs-->
+        		<div id="verticalTab">
+		            <ul class="resp-tabs-list">
+		                <li>美食详情</li>
+		                <li>美食标签</li>
+		                <li>吃货点评</li>
+		            </ul>
+		            <div class="resp-tabs-container vertical-tabs">
+		                <div>
+		                	<h3> 细节</h3>
+		                    <p>详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍</p>
+		               		<p>详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍详情介绍</p>
+		                </div>
+		                <div>
+		                	<h3>美食标签</h3>
+		                	<h4>加入我的美食标签：</h4>
+		                	<form>
+		                		<input type="text"> <input type="submit" value="添加"/>
+		                		<span>使用空格分割标签</span>
+		                	</form>
+		                </div>
+		                <div>
+		                	<h3>吃货点评</h3>
+		                	<p>你已来到了评价的荒原，等待你开垦。</p>
+		                </div>
+		            </div>
+       		     </div>
+       		     <div class="clearfix"> </div>
+		      </div>
+		      <div class="related_products">
+		      	<h3>你可能喜欢</h3>
+		      	<div class="row">
+		      		<div class="col-md-4 related">
+		      			<img src="images/pic4.jpg" class="img-responsive" alt=""/>
+		      		</div>
+		      		<div class="col-md-4 related">
+		      			<img src="images/pic5.jpg" class="img-responsive" alt=""/>
+		      		</div>
+		      		<div class="col-md-4">
+		      			<img src="images/pic6.jpg" class="img-responsive" alt=""/>
+		      		</div>
+		      	</div>
+		      </div>
+		   </div>    
+		</div>
+	  </div>
+	 </div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="footer-grid footer-grid1">
+			  <h3 class="m_2">了解我们</h3>
+			  <ul class="list1">
+			  	<li><a href="#">主页</a></li>
+			    <li><a href="#">介绍</a></li>
+			    <li><a href="#">微博</a></li>
+			    <li><a href="#">新闻</a></li>
+			    <li><a href="#">注册</a></li>
+			    <li><a href="#">加入</a></li>
+			  </ul>
+		   </div>
+		   <div class="footer-grid footer-grid2">
+			  <h3 class="m_2">吧唧吧唧</h3>
+			  <ul class="list1">
+			    <li><a href="#">国内首家C2C美食平台</a></li>
+			    <li><a href="#">呷一口家的熟悉味道</a></li>
+			    <li><a href="#">结识上千万吃货好友</a></li>
+			    <li><a href="#">和邻居老王共享美食</a></li>
+			  </ul>
+		   </div>
+		   <div class="footer-grid footer-grid3">
+			  <h3 class="m_2">用户信息</h3>
+			  <ul class="list1">
+			  	<li><a href="#">我的账户</a></li>
+			    <li><a href="#">我的积分</a></li>
+			    <li><a href="#">用户协议</a></li>
+			    <li><a href="#">美食向导</a></li>
+			    <li><a href="#">FAQ</a></li>
+			  </ul>
+		   </div>
+		   <div class="footer-grid footer-grid4">
+			   <h3 class="m_2">交个朋友</h3>
+			   <ul class="footer_social">
+				 <li><a href=""><i class="tw"> </i> </a></li>
+				 <li><a href=""><i class="fb"> </i> </a></li>
+				 <li><a href=""><i class="rss"> </i> </a></li>
+				 <li><a href=""><i class="msg"> </i> </a></li>
+				 <div class="clearfix"> </div>
+			   </ul>
+			   <h3 class="m_3">美食订阅</h3>
+			   <p class="m_4">定期发送最新最火最馋人的美食画册</p>
+			   <div class="footer_search">
+			    <input type="text" class="text" value="输入邮箱" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter Email';}">
+			    <input type="submit" value="点我搜索">
+			   </div>
+		   </div>
+		   <div class="footer-grid footer-grid_last">
+	          <ul class="secure">
+			  	<li class="secure_img"><img src="images/secure.png" alt=""/></li> 
+			  	<li class="secure_desc">加入食品安全100%计划</li>
+			  	<div class="clearfix"> </div>
+			  </ul>
+			  <ul class="secure">
+			  	<li class="secure_img"><img src="images/order.png" alt=""/></li> 
+			  	<li class="secure_desc">成为美食到家守护者</li>
+			  	<div class="clearfix"> </div>
+			 </ul>
+		   </div>
+		   <div class="clearfix"> </div>
+		   <div class="copy">
+		    <p>Copyright &copy; 2014.Company name All rights reserved.</p>
+		</div>
+	   </div>
+	</div>
+<div style="display:none"><script src='http://v7.cnzz.com/stat.php?id=155540&web_id=155540' language='JavaScript' charset='gb2312'></script></div>
+</body>
+</html>
+
+

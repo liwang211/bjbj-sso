@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace 唯一标识映射文件 -->
+<mapper namespace="com.bjbj.sso.mapper.UserMapper">
+	
+	<!-- 别名包在spring中定义 -->
+	<select id="findCheckUser" resultType="int">
+		select count(*) 
+		from tb_user
+		<where>
+			${cloumn}=#{param}
+		</where>
+	</select>
+	
+</mapper>

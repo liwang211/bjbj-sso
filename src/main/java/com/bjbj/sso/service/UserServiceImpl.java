@@ -63,8 +63,7 @@ public class UserServiceImpl implements UserService {
 		// 将密码进行加密处理
 		String md5Password = DigestUtils.md5Hex(user.getPassword());
 		user.setPassword(md5Password);
-		// 修改bug 填补邮箱为null的情况
-		user.setEmail(user.getPhone());
+		
 		// 执行insert操作
 		userMapper.insert(user);
 

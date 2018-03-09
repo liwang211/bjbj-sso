@@ -20,7 +20,6 @@ public class User extends BasePojo{
 	private String username; 	// 用户名
 	private String password; 	// 密码
 	private String phone; 		// 电话
-	private String email; 		// 邮箱
 	
 	
 	
@@ -49,16 +48,10 @@ public class User extends BasePojo{
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
+	
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", password=" + password + ", phone=" + phone + ", email="
-				+ email + "]";
+		return "User [id=" + id + ", username=" + username + ", password=" + password + ", phone=" + phone + "]";
 	}
 	
 	
